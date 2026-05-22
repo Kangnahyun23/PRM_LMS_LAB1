@@ -1,4 +1,4 @@
-namespace PRN232.LMS.BusinessModels.Query;
+namespace PRN232.LMS.Repositories.Query;
 
 public sealed class PaginationMeta
 {
@@ -7,4 +7,3 @@ public sealed class PaginationMeta
     public int TotalItems { get; set; }
     public int TotalPages { get; set; }
 }
-

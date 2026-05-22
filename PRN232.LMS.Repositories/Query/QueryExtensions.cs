@@ -1,7 +1,5 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using PRN232.LMS.BusinessModels.Query;
-
 namespace PRN232.LMS.Repositories.Query;
 
 internal static class QueryExtensions

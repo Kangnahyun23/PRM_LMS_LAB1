@@ -19,7 +19,6 @@
   <ItemGroup>
     <ProjectReference Include="..\PRN232.LMS.Services\PRN232.LMS.Services.csproj" />
     <ProjectReference Include="..\PRN232.LMS.Repositories\PRN232.LMS.Repositories.csproj" />
-    <ProjectReference Include="..\PRN232.LMS.BusinessModels\PRN232.LMS.BusinessModels.csproj" />
   </ItemGroup>
 
 </Project>

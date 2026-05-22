@@ -1,4 +1,4 @@
-namespace PRN232.LMS.BusinessModels;
+namespace PRN232.LMS.Repositories.BusinessModels;
 
 public sealed class SemesterBM
 {
@@ -9,4 +9,3 @@ public sealed class SemesterBM
 
     public IReadOnlyList<CourseBM>? Courses { get; set; }
 }
-

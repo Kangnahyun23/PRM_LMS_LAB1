@@ -1,5 +1,5 @@
-using PRN232.LMS.BusinessModels;
-using PRN232.LMS.BusinessModels.Query;
+using PRN232.LMS.Repositories.BusinessModels;
+using PRN232.LMS.Repositories.Query;
 using PRN232.LMS.Repositories.Interfaces;
 using PRN232.LMS.Repositories.Models;
 using PRN232.LMS.Services.Interfaces;

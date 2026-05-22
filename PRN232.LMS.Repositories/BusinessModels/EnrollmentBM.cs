@@ -1,4 +1,4 @@
-namespace PRN232.LMS.BusinessModels;
+namespace PRN232.LMS.Repositories.BusinessModels;
 
 public sealed class EnrollmentBM
 {
@@ -11,4 +11,3 @@ public sealed class EnrollmentBM
     public StudentBM? Student { get; set; }
     public CourseBM? Course { get; set; }
 }
-

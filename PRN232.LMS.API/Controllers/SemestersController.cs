@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using PRN232.LMS.API.Infrastructure;
 using PRN232.LMS.API.Models.Request;
 using PRN232.LMS.API.Models.Response;
-using PRN232.LMS.BusinessModels;
-using PRN232.LMS.BusinessModels.Query;
+using PRN232.LMS.Repositories.BusinessModels;
+using PRN232.LMS.Repositories.Query;
 using PRN232.LMS.Services.Interfaces;
 
 namespace PRN232.LMS.API.Controllers;

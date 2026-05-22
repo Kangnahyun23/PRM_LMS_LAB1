@@ -1,4 +1,4 @@
-namespace PRN232.LMS.BusinessModels.Query;
+namespace PRN232.LMS.Repositories.Query;
 
 public sealed class QueryOptions
 {
@@ -9,4 +9,3 @@ public sealed class QueryOptions
     public string? Fields { get; set; }
     public string? Expand { get; set; }
 }
-
