@@ -5,8 +5,6 @@ COPY PRN232.LMS.sln ./
 COPY PRN232.LMS.API/PRN232.LMS.API.csproj PRN232.LMS.API/
 COPY PRN232.LMS.Services/PRN232.LMS.Services.csproj PRN232.LMS.Services/
 COPY PRN232.LMS.Repositories/PRN232.LMS.Repositories.csproj PRN232.LMS.Repositories/
-COPY PRN232.LMS.BusinessModels/PRN232.LMS.BusinessModels.csproj PRN232.LMS.BusinessModels/
-
 RUN dotnet restore PRN232.LMS.sln
 
 COPY . ./

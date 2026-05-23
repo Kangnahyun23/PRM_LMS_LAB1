@@ -28,7 +28,7 @@ public sealed class StudentService : IStudentService
         var paged = await _repo.GetAllAsync(options, ct);
         return new PagedResult<StudentBM>
         {
-            Items = paged.Items.Select(Map).ToList(),
+            Items = paged.Items.Select(MapFlat).ToList(),
             Pagination = paged.Pagination,
         };
     }
@@ -61,6 +61,16 @@ public sealed class StudentService : IStudentService
     public async Task<bool> DeleteAsync(int id, CancellationToken ct = default)
         => await _repo.DeleteAsync(id, ct);
 
+    // Used for list — no nested collections to avoid bloated responses
+    private static StudentBM MapFlat(Student e) => new()
+    {
+        StudentId = e.StudentId,
+        FullName = e.FullName,
+        Email = e.Email,
+        DateOfBirth = e.DateOfBirth,
+    };
+
+    // Used for GET by ID — includes full related data
     private static StudentBM Map(Student e) => new()
     {
         StudentId = e.StudentId,
